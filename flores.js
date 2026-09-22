@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mostrandoFlores = false;
       }, 600);
     } else {
-      reyna.classList.add("animar-giro");
+      puchito.classList.add("animar-giro");
       setTimeout(() => {
         puchito.style.display = "none";
         flores.style.display = "block";
