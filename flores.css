@@ -62,3 +62,28 @@ footer {
   font-size: 1em;
   color: #fff;
 }
+
+/* 🔹 Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4em; /* título más pequeño */
+  }
+
+  .intro {
+    font-size: 1em;
+    margin: 15px;
+  }
+
+  .flowers {
+    max-width: 200px; /* reduce imagen en móviles */
+  }
+
+  .hint {
+    font-size: 0.8em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
