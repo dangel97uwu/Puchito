@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const flores = document.getElementById("flores");
-  const reyna = document.getElementById("reyna");
+  const puchito = document.getElementById("puchito");
   const cancion = document.getElementById("cancion");
 
   let mostrandoFlores = true;
@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
       flores.classList.add("animar-giro");
       setTimeout(() => {
         flores.style.display = "none";
-        reyna.style.display = "block";
-        reyna.classList.add("animar-giro");
+        puchito.style.display = "block";
+        puchito.classList.add("animar-giro");
         mostrandoFlores = false;
       }, 600);
     } else {
       reyna.classList.add("animar-giro");
       setTimeout(() => {
-        reyna.style.display = "none";
+        puchito.style.display = "none";
         flores.style.display = "block";
         flores.classList.add("animar-giro");
         mostrandoFlores = true;
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Al hacer clic en cualquiera de las imágenes
-  [flores, reyna].forEach(img => {
+  [flores, puchito].forEach(img => {
     img.addEventListener("click", () => {
       if (cancion.paused) {
         cancion.play();
